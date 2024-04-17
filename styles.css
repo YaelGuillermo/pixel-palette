@@ -1,0 +1,65 @@
+/* Estilos para la ventana principal */
+QMainWindow {
+    background-color: #FFEB86;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos para la barra de título */
+QMainWindow::titleBar {
+    background-color: #8D824D;
+    border: 1px solid #8D824D;
+}
+
+/* Estilos para el botón "Take Screenshot" */
+QPushButton {
+    background-color: #8D824D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+QPushButton:hover {
+    background-color: #CEA963;
+}
+
+/* Estilos para las etiquetas de texto */
+QLabel {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+/* Estilos para los botones de copiar */
+QPushButton#copy_rgb_button, QPushButton#copy_hexa_button {
+    background-color: #8D824D;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+QPushButton#copy_rgb_button:hover, QPushButton#copy_hexa_button:hover {
+    background-color: #CEA963;
+}
+
+/* Estilos para el cuadro de color */
+QLabel#color_box {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #0F0F0F;
+    border-radius: 5px;
+}
+
+/* Estilos para los botones de copiar visibles */
+QPushButton#copy_rgb_button[visible="true"], QPushButton#copy_hexa_button[visible="true"] {
+    visibility: visible;
+}
+
+/* Estilos para los botones de copiar ocultos */
+QPushButton#copy_rgb_button[visible="false"], QPushButton#copy_hexa_button[visible="false"] {
+    visibility: hidden;
+}
